@@ -1,0 +1,32 @@
+
+### Create a Task
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Task 1",
+  "description": "Description for Task 1",
+  "dueDate": "2024-01-30"
+}
+
+### Get All Tasks
+GET http://localhost:8080/api/tasks
+
+### Get a Specific Task
+# Replace '1' with the actual task ID you want to retrieve
+GET http://localhost:8080/api/tasks/1
+
+### Update a Task
+# Replace '1' with the actual task ID you want to update
+PUT http://localhost:8080/api/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Updated Task 1",
+  "description": "Updated description for Task 1",
+  "dueDate": "2024-02-01"
+}
+
+### Delete a Task
+# Replace '1' with the actual task ID you want to delete
+DELETE http://localhost:8080/api/tasks/1
